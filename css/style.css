@@ -1,0 +1,165 @@
+body{
+	font-family: "Helvetica Neue";
+	font-size: 15px;
+	color: #444444;
+	font-weight: 300;
+}
+header{
+	position: absolute;
+	width:100%;
+	background-color: rgba(0,0,0,0.65);
+	text-align: center;
+	font-size: 14px;
+	color: #FFFFFF;
+	padding: 15px 0;
+}
+header h1{
+	font-size: 18px;
+}
+#hero{ /*Este es el banner y se usa esto como un generalizacion*/
+	background-image: url("../img/v9-slide-1.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	color: #FFFFFF;
+	padding: 15% 0;
+	text-align: center;
+}
+#hero h1 { /*Esto es para cambiar un unico header*/
+	font-size: 60px;
+	text-transform: uppercase;
+	font-weight: 300;
+	letter-spacing: 4px; /* Esto es para la separacion de letras*/
+	margin-bottom: 40px;
+}
+#hero h3{
+	font-size: 16px;
+	font-weight: 300;/*Esto es para el stroke*/
+	margin-bottom: 80px; /*Esto es para separar entre cosas pequenas*/
+}
+
+#hero .btn-dark{
+	background-color: #000;
+	text-transform: uppercase;
+	font-size: 14px;
+	padding: 15px 30px;
+	border-radius: 0;
+	margin-right: 20px;
+	letter-spacing: 2px;
+}
+
+#hero .btn-dark:hover,
+#hero .btn-active{
+	background-color: #D80808;
+}
+#hero .btn-active:hover{
+	background-color: #000000;
+}
+
+#info h3{
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: 300;
+	letter-spacing: 1px;
+	color: #222;
+	padding: 150px 0 10px 0; /*Para separar entre cosas grandes*/
+	text-align: center;
+	line-height: 40px;/*ESTO es interlineado*/
+}
+#info p{
+	font-size: 15px;
+	font-weight: 200;
+	letter-spacing: 1px;
+	color: #444444;
+	padding: 0 5px; /*Para separar entre cosas grandes*/
+	text-align: center;
+	line-height: 30px;/*ESTO es interlineado*/
+}
+.titulo{
+	font-size: 36px;
+	font-weight: 300;
+	text-align: center;
+	letter-spacing: 2px;
+	color: #2d2d2d;
+}
+.titulo::after{
+	content:'';
+	border: 1px solid #2d2d2d;
+	display: block;
+	width: 50px;
+	margin: 30px auto;
+}
+.subtitulo{
+	font-size: 24px;
+	color: #444;
+	font-weight: 300;
+	margin-bottom: 30px;
+}
+.bg-gris{
+	background-color: #f2f2f2;
+	padding: 5% !important;
+}
+.btn-negro{
+	background-color: transparent;
+	border: 1px solid #000000;
+	padding: 10px 20px;
+	border-radius: 0px;
+	text-transform: uppercase;
+}
+.btn-negro:hover{
+	background-color: #d80808;
+	color: #fff;
+	border-color: #d808080;
+}
+#about .titulo,
+#about2 .titulo{
+	text-align: left;
+	margin-bottom: 20px;
+}
+#about .titulo::after,
+#about2 .titulo::after{
+	display: none;
+}
+#recentprojects{
+background-color: #f2f2f2;
+	padding-top: 5%;
+}
+#about2 .bg-gris{
+	background-color: #fff;
+}
+.project{
+	position: relative;
+	overflow: hidden;
+}
+.projectinfo{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	text-align: center;
+	display: grid;
+	align-content: center;
+	color: #fff;
+	background-color: rgba(204,5,8,0.70);
+	opacity: 0;
+	transition: all 0.3s ease-in-out;
+}
+.projectinfo h4{
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+.project:hover .projectinfo{
+	opacity: 1;
+	transition: all 0.3s ease-in-out;
+}
+.project img{
+	transition: all 0.3s ease-in-out;
+}
+.project:hover img{
+	transform: scale(1.3);
+	transition: all 0.3s ease-in-out;
+}
+
+
+	
